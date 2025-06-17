@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+productComponents:
+    label: 'Componentes'
+    view:
+        list: $/vpsoft/inventorymanager/models/component/columns.yaml
+        toolbarButtons: create|remove
+    manage:
+        form: $/vpsoft/inventorymanager/models/component/fields.yaml
+        list: $/vpsoft/inventorymanager/models/component/columns.yaml

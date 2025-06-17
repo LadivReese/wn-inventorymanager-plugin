@@ -1,0 +1,54 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('vpsoft/inventorymanager/products/') ?>"><?= e(trans('vpsoft.inventorymanager::lang.products.menues.label')) ?></a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <?php Block::put('form-contents') ?>
+
+        <div class="layout-row">
+            <?= $this->importRender() ?>
+        </div>
+
+        <div class="form-buttons">
+            <a href="<?= Backend::url('vpsoft/inventorymanager/products') ?>" class="btn btn-default oc-icon-chevron-left">
+                <?= e(trans('backend::lang.form.return_to_list')) ?>
+            </a>
+            <button
+                type="submit"
+                data-control="popup"
+                data-request-sociedad="value: "
+                data-handler="onImportLoadForm"
+                data-keyboard="false"
+                class="btn btn-primary">
+                Cargar Productos
+            </button>
+        </div>
+
+    <?php Block::endPut() ?>
+
+    <?php Block::put('form-sidebar') ?>
+        <div class="text-center">
+            <div>
+                <h4 style="color:#126896;font-weight: 800;">Carga másiva de productos</h4>
+                <p>Para cargar productos en el sistema a demanda del cliente.</p>
+                <p>Favor tener en cuenta el documento de ejemplo para subir el CSV de forma adecuada.</p>
+                <br/>
+                <a download="impor_example.csv" target="_blank" href="../../../../plugins/vpsoft/inventorymanager/assets/file/impor_example.csv" title="Documento" class="btn btn-primary active">Descargar ejemplo de CSV</a>
+            </div>
+        </div>
+    <?php Block::endPut() ?>
+
+    <?php Block::put('body') ?>
+        <?= Form::open(['class'=>'layout stretch']) ?>
+            <?= $this->makeLayout('form-with-sidebar') ?>
+        <?= Form::close() ?>
+    <?php Block::endPut() ?>
+    
+<?php else: ?>
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('vpsoft/inventorymanager/products') ?>" class="btn btn-default oc-icon-chevron-left"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+<?php endif ?>

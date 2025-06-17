@@ -1,0 +1,50 @@
+columns:
+    name:
+        label: 'Nombre'
+        type: text
+        searchable: true
+        sortable: true
+    code:
+        label: 'Código'
+        type: text
+        searchable: true
+        sortable: true
+    active:
+        label: 'Activo'
+        type: switch
+        searchable: false
+        sortable: true
+    category:
+        label: 'Categoria'
+        relation: categories
+        selec: slug
+        searchable: false
+        sortable: true
+    purchase_price:
+        label: 'Precio de compra'
+        type: number
+        searchable: false
+        sortable: true
+    sale_price:
+        label: 'Precio de Venta'
+        type: number
+        searchable: false
+        sortable: true
+    end_qty:
+        label: 'Cantidad'
+        type: number
+        searchable: false
+        sortable: true
+    measurement:
+        label: 'Unidad de Medida'
+        type: text
+        searchable: false
+        sortable: true
+    created_at:
+        label: 'Fecha de Creación'
+        type: datetime
+        searchable: false
+        sortable: true
+    deleted_at:
+        label: 'Fecha de Actualización'
+        type: datetime

@@ -1,0 +1,29 @@
+fields:
+    product_id:
+        label: Producto
+        span: auto
+        type: text
+    type:
+        label: 'Tipo de movimiento'
+        options:
+            entrada: Entrada
+            salida: Salida
+            ajuste: Ajuste
+        emptyOption: 'Seleccione una opción'
+        showSearch: true
+        span: auto
+        type: dropdown
+    qty:
+        label: Cantidad
+        span: auto
+        type: number
+    date:
+        label: Fecha
+        mode: date
+        span: auto
+        type: datepicker
+    reason:
+        label: Motivo
+        size: ''
+        span: auto
+        type: textarea

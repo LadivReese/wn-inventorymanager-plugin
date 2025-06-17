@@ -1,0 +1,83 @@
+fields:
+    active:
+        label: Activo
+        span: storm
+        cssClass: col-xs-6
+        type: switch
+        on: 'Si'
+        off: 'No'
+    is_composed:
+        label: 'Tiene componentes'
+        span: storm
+        cssClass: col-xs-6
+        type: switch
+        on: 'Si'
+        off: 'No'
+    name:
+        label: 'Nombre'
+        span: storm
+        cssClass: col-xs-4
+        type: text
+    code:
+        label: 'Código'
+        span: storm
+        cssClass: col-xs-4
+        type: text
+    category_id:
+        label: 'Categoria'
+        span: storm
+        cssClass: col-xs-4
+        type: dropdown
+        emptyOption: 'Seleccione una opción'
+    qty:
+        label: 'Cantidad'
+        span: storm
+        cssClass: col-xs-6
+        type: number
+    measurement:
+        label: 'Unidad de medida'
+        span: storm
+        cssClass: col-xs-6
+        type: dropdown
+        emptyOption: 'Seleccione una opción'
+    purchase_price:
+        label: 'Precio de Compra'
+        span: storm
+        cssClass: col-xs-6
+        type: number
+    sale_price:
+        label: 'Precio de Venta'
+        span: storm
+        cssClass: col-xs-6
+        type: number
+    description:
+        label: 'Descripción'
+        span: storm
+        cssClass: col-xs-12
+        type: textarea
+tabs:
+    fields:
+        _product_components:
+            label: null
+            type: partial
+            path: $/vpsoft/inventorymanager/models/component/_relation_product_components.htm
+            tab: 'Componentes'
+            trigger:
+                action: show
+                field: is_composed
+                condition: checked
+
+secondaryTabs:
+    fields:
+        images:
+            label: 'Imagen referencia'
+            type: fileupload
+            span: full
+            mode: image
+            fileTypes: 'jpg,png,jpeg'
+            useCaption: true
+            imageHeight: 300
+            imageWidth: 270
+            thumbOptions:
+                mode: auto
+                extension: auto

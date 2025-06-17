@@ -1,0 +1,10 @@
+name: Products
+form: $/vpsoft/inventorymanager/models/product/fields.yaml
+modelClass: Vpsoft\InventoryManager\Models\Product
+defaultRedirect: vpsoft/inventorymanager/products
+create:
+    redirect: 'vpsoft/inventorymanager/products/update/:id'
+    redirectClose: vpsoft/inventorymanager/products
+update:
+    redirect: vpsoft/inventorymanager/products
+    redirectClose: vpsoft/inventorymanager/products

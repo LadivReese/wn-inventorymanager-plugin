@@ -1,0 +1,21 @@
+fields:
+    product_id:
+        label: 'Producto'
+        span: auto
+        type: recordfinder
+        list: $/vpsoft/inventorymanager/models/product/columns.yaml
+        keyFrom: id
+        useRelation: false
+        nameFrom: name
+        recordsPerPage: 20
+        emptyOption: Seleccione una opcion
+        modelClass: Vpsoft\InventoryManager\Models\Product
+    qty:
+        label: Cantidad
+        span: auto
+        type: text
+    measurement:
+        label: 'Unidad de medida'
+        span: auto
+        type: dropdown
+        emptyOption: 'Seleccione una opción'

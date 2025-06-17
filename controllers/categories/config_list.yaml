@@ -1,0 +1,12 @@
+list: $/vpsoft/inventorymanager/models/category/columns.yaml
+modelClass: Vpsoft\InventoryManager\Models\Category
+title: Categories
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vpsoft/inventorymanager/categories/update/:id'

@@ -1,0 +1,45 @@
+plugin:
+    name: 'vpsoft.inventorymanager::lang.plugin.name'
+    description: 'vpsoft.inventorymanager::lang.plugin.description'
+    author: VPSoft
+    icon: oc-icon-adjust
+    homepage: ''
+permissions:
+    vpsoft.inventorymanager.permissions.manage_products:
+        tab: 'vpsoft.inventorymanager::lang.plugin.name'
+        label: 'vpsoft.inventorymanager::lang.permissions.manage_products'
+    vpsoft.inventorymanager.permissions.manage_categories:
+        tab: 'vpsoft.inventorymanager::lang.plugin.name'
+        label: 'vpsoft.inventorymanager::lang.permissions.manage_categories'
+    vpsoft.inventorymanager.permissions.manage_movements:
+        tab: 'vpsoft.inventorymanager::lang.plugin.name'
+        label: 'vpsoft.inventorymanager::lang.permissions.manage_movements'
+    vpsoft.inventorymanager.permissions.manage_product_components:
+        tab: 'vpsoft.inventorymanager::lang.plugin.name'
+        label: 'vpsoft.inventorymanager::lang.permissions.manage_product_components'
+navigation:
+    main-menu-intencory-manager:
+        label: Inventario
+        url: vpsoft/inventorymanager/products
+        icon: icon-list-alt
+        permissions:
+            - vpsoft.inventorymanager.permissions.manage_products
+        sideMenu:
+            side-menu-products:
+                label: Productos
+                url: vpsoft/inventorymanager/products
+                icon: icon-dropbox
+                permissions:
+                    - vpsoft.inventorymanager.permissions.manage_products
+            side-menu-categories:
+                label: 'Categorias de producto'
+                url: vpsoft/inventorymanager/categories
+                icon: icon-sitemap
+                permissions:
+                    - vpsoft.inventorymanager.permissions.manage_categories
+            side-menu-movements:
+                label: Movimientos
+                url: vpsoft/inventorymanager/inventorymovements
+                icon: icon-road
+                permissions:
+                    - vpsoft.inventorymanager.permissions.manage_movements

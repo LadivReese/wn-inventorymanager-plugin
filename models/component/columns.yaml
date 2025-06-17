@@ -1,0 +1,22 @@
+columns:
+    product_id:
+        label: Producto
+        relation: products
+        select: name
+        sortable: false
+        searchable: false
+    qty:
+        label: qty
+        type: text
+        sortable: false
+        searchable: false
+    measurement:
+        label: measurement
+        type: text
+        sortable: false
+        searchable: false
+    created_at:
+        label: created_at
+        type: datetime
+        sortable: false
+        searchable: false

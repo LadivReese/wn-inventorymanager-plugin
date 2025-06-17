@@ -1,0 +1,22 @@
+columns:
+    product_id:
+        label: product_id
+        type: number
+    type:
+        label: type
+        type: text
+    qty:
+        label: qty
+        type: number
+    date:
+        label: date
+        type: text
+    reason:
+        label: reason
+        type: text
+    backend_user_id:
+        label: backend_user_id
+        type: number
+    created_at:
+        label: created_at
+        type: datetime

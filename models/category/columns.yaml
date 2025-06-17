@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: 'Nombre'
+        type: text
+    slug:
+        label: 'Slug'
+        type: text
+    created_at:
+        label: 'Fecha de Creación'
+        type: datetime

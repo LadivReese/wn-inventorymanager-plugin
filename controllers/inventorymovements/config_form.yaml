@@ -1,0 +1,10 @@
+name: InventoryMovements
+form: $/vpsoft/inventorymanager/models/inventorymovement/fields.yaml
+modelClass: Vpsoft\InventoryManager\Models\InventoryMovement
+defaultRedirect: vpsoft/inventorymanager/inventorymovements
+create:
+    redirect: 'vpsoft/inventorymanager/inventorymovements/update/:id'
+    redirectClose: vpsoft/inventorymanager/inventorymovements
+update:
+    redirect: vpsoft/inventorymanager/inventorymovements
+    redirectClose: vpsoft/inventorymanager/inventorymovements

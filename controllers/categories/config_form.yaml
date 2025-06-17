@@ -1,0 +1,10 @@
+name: Categories
+form: $/vpsoft/inventorymanager/models/category/fields.yaml
+modelClass: Vpsoft\InventoryManager\Models\Category
+defaultRedirect: vpsoft/inventorymanager/categories
+create:
+    redirect: 'vpsoft/inventorymanager/categories/update/:id'
+    redirectClose: vpsoft/inventorymanager/categories
+update:
+    redirect: vpsoft/inventorymanager/categories
+    redirectClose: vpsoft/inventorymanager/categories

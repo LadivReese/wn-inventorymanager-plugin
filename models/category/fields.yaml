@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: Nombre
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        readOnly: true
+        preset: 
+            field: name
+            type: text
+    description:
+        label: Descripción
+        span: full
+        type: text

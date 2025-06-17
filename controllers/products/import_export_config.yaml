@@ -1,0 +1,9 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: Import subscribers
+    modelClass: Vpsoft\InventoryManager\Models\ProductImport
+    list: $/vpsoft/inventorymanager/models/product/columns.yaml
+    redirect: vpsoft/inventorymanager/products

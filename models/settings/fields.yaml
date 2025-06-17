@@ -1,0 +1,19 @@
+fields:
+    measurement_section:
+        label: Unidades de Medida
+        type: section
+        comment: Sección para configurar Unidades de medida.
+    measurement:
+        type: repeater
+        titleFrom: name
+        prompt: Agregar nueva unidad de medida
+        form:
+            fields:
+                name:
+                    label: 'nombre'
+                    type: text
+                    span: auto
+                symbol:
+                    label: 'Simbolo'
+                    type: text
+                    span: auto

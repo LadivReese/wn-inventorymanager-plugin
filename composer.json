@@ -1,0 +1,13 @@
+{
+    "name": "vpsoft/wn-inventorymanager-plugin",
+    "type": "winter-plugin",
+    "authors": [
+        {
+            "name": "Vidal Paredes",
+            "email": "ladivreese@gmail.com"
+        }
+    ],
+    "description": "Plugin de Inventario.",
+    "repositories": [],
+    "require": {}
+}

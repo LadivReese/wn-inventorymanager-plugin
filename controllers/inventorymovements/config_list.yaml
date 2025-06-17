@@ -1,0 +1,12 @@
+list: $/vpsoft/inventorymanager/models/inventorymovement/columns.yaml
+modelClass: Vpsoft\InventoryManager\Models\InventoryMovement
+title: InventoryMovements
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vpsoft/inventorymanager/inventorymovements/update/:id'

@@ -1,0 +1,17 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table vpsoft_inventorymanager_products'
+    - builder_table_create_vpsoft_inventorymanager_products.php
+1.0.3:
+    - 'Created table vpsoft_inventorymanager_categories'
+    - builder_table_create_vpsoft_inventorymanager_categories.php
+1.0.4:
+    - 'Created table vpsoft_inventorymanager_inventory_movement'
+    - builder_table_create_vpsoft_inventorymanager_inventory_movement.php
+1.0.5:
+    - 'Created table vpsoft_inventorymanager_components'
+    - builder_table_create_vpsoft_inventorymanager_components.php
+1.0.6:
+    - 'Created table vpsoft_inventorymanager_product_components'
+    - builder_table_create_vpsoft_inventorymanager_product_components.php
